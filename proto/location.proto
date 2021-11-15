@@ -9,4 +9,6 @@ message Location {
     string id = 1;
     double lat = 2;
     double lng = 3;
+    int64 timestamp = 4;
+    string device = 5;
 }
