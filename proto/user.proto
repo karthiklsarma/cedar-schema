@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package gen;
+
+import "location.proto";
+
+// protoc --go_out=. *.proto to generate proto files in the destination
+option go_package = "../gen/";
+
+message User {
+    string id = 1;
+    string username = 2;
+    string password = 3;
+    Location location = 4;
+    repeated string groups  = 5;
+}
+
