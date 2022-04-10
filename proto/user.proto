@@ -10,8 +10,13 @@ option go_package = "../gen/";
 message User {
     string id = 1;
     string username = 2;
-    string password = 3;
-    Location location = 4;
-    repeated string groups  = 5;
+    string firstname = 3;
+    string lastname = 4;
+    string password = 5;
+    string phone = 6;
+    string email = 7;
+    uint64 creationtimeutc = 8;
+    Location location = 9;
+    repeated string groups = 10;
 }
 
